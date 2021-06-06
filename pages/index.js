@@ -36,11 +36,12 @@ export default function Home({
   return (
     <Layout>
       <Head>
-        <title>Search Anime · Anilist</title>
-        <link rel="icon" href="/images/AnilistIcon.png" />
+        <title>Search Anime · RhytOtaku</title>
+        <link rel="icon" href="/images/rhytoleaf-icon.png" />
       </Head>
 
-      <Landing />
+      {/* <Landing /> */}
+      
       <Filters />
 
       <MediaCardList
