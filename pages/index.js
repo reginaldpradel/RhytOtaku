@@ -6,6 +6,18 @@ import MediaCardList from "../components/rootRoute/mediaCardList";
 import animeListQuery from "../lib/animeListQuery";
 import useWindowDimensions from "../lib/useWindowDimensions";
 
+import firebase from "firebase";
+
+firebase.initializeApp({
+  apiKey: "AIzaSyDt-yDm38nIScGHjXXqiU80yldRdTJqUaY",
+    authDomain: "rhytotaku.firebaseapp.com",
+    projectId: "rhytotaku",
+    storageBucket: "rhytotaku.appspot.com",
+    messagingSenderId: "190234026103",
+    appId: "1:190234026103:web:105ef0327857a229c8a672",
+    measurementId: "G-V0YTR1JTY2"
+})
+
 export async function getServerSideProps() {
   const { data } = await animeListQuery();
   const topScore = data.topScore;
